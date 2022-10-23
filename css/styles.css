@@ -1,7 +1,15 @@
 body {
   font-family: "roboto", sans-serif;
-  color: #212121;
-  background-color: #ffffff;
+  color: var(--body-color);
+  background-color: var(--body-background);
+}
+:root {
+  --brand-color: #2196f3;
+  --body-background: #ffffff;
+  --body-color: #212121;
+  --hover-focus-color-link: #2196f3;
+  --tel-mail-header-color: #757575;
+  --tel-mail-footer-color: rgba(255, 255, 255, 0.6);
 }
 .list {
   list-style: none;
@@ -9,17 +17,16 @@ body {
 .link {
   text-decoration: none;
 }
-
 /* ===============header================= */
 .header {
 }
 .logotype-header {
-  font-family: "Raleway" sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--brand-color);
 }
 .logo-studio {
   color: #212121;
@@ -37,27 +44,27 @@ body {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #2196f3;
+  color: var(--hover-focus-color-link);
 }
 .adress-header {
 }
-.adress-item {
+.adress-item-header {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
 .header-mail {
-  color: #757575;
+  color: var(--tel-mail-color);
 }
 .header-tel {
-  color: #757575;
+  color: var(--tel-mail-color);
 }
 .header-mail:hover,
 .header-mail:focus,
 .header-tel:hover,
 .header-tel:focus {
-  color: #2196f3;
+  color: var(--hover-focus-color-link);
 }
 /* ==============main============== */
 /*-------------- title------------ */
@@ -214,12 +221,12 @@ body {
   background-color: #2f303a;
 }
 .logotype-footer {
-  font-family: "Raleway" sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--brand-color);
 }
 .logo-studio-footer {
   color: #ffffff;
@@ -227,30 +234,25 @@ body {
 .address-footer {
 }
 .adress-map {
-  font-style: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 .adress-map:hover,
 .adress-map:focus {
-  color: #2196f3;
+  color: var(--hover-focus-color-link);
 }
 .adress-item {
+  font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
-.footer-mail {
-  color: rgba(255, 255, 255, 0.6);
-}
+.footer-mail,
 .footer-tel {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--tel-mail-footer-color);
 }
 .footer-mail:hover,
 .footer-mail:focus,
 .footer-tel:hover,
 .footer-tel:focus {
-  color: #2196f3;
+  color: var(--hover-focus-color-link);
 }
