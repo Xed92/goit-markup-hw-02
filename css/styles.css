@@ -8,8 +8,8 @@ body {
   --body-background: #ffffff;
   --body-color: #212121;
   --hover-focus-color-link: #2196f3;
-  --tel-mail-header-color: #757575;
   --tel-mail-footer-color: rgba(255, 255, 255, 0.6);
+  --tel-mail-header-color: #757575;
 }
 .list {
   list-style: none;
@@ -54,11 +54,9 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
+.header-tel,
 .header-mail {
-  color: var(--tel-mail-color);
-}
-.header-tel {
-  color: var(--tel-mail-color);
+  color: var(--tel-mail-header-color);
 }
 .header-mail:hover,
 .header-mail:focus,
